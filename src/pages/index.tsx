@@ -1,8 +1,8 @@
 import { styled } from '../styles'
 
 const Button = styled('button', {
-  backgroundColor: '$rocketseat',
-  borderRadius: 10,
+  backgroundColor: '$green300',
+  borderRadius: 6,
 
   span: {
     fontWeight: 700,
@@ -10,10 +10,8 @@ const Button = styled('button', {
   },
 
   '&:hover': {
-    backgroundColor: 'red',
-    
     span: {
-      color: 'white',
+      color: '$white',
     }
   }
 })
