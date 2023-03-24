@@ -1,3 +1,4 @@
+import { ImageContainer, ProductContainer, ProductDetails } from '@/src/styles/pages/product'
 import { GetServerSideProps } from 'next'
 import Image from 'next/image'
 
@@ -8,6 +9,22 @@ export default function Product() {
   const { id } = router.query as { id: string }
   
   return (
-    <h1>{id}</h1>
+    <ProductContainer>
+      <ImageContainer>
+
+      </ImageContainer>
+
+      <ProductDetails>
+        <h1>Camiseta x</h1>
+        <span>100,00</span>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quisquam, quod. Quisquam, quod. Quisquam, quod. Quisquam, quod.
+        </p>
+
+        <button type="button">Comprar agora</button>
+      </ProductDetails>
+    </ProductContainer>
   )
 }
